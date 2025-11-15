@@ -1,1 +1,217 @@
-Pagina web de casas
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Melchor - Una Persona Especial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            padding: 60px 40px;
+            text-align: center;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .profile-section {
+            margin-bottom: 40px;
+        }
+
+        .name {
+            font-size: 3em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .description {
+            font-size: 1.1em;
+            color: #7f8c8d;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .attributes {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .attribute {
+            font-size: 0.95em;
+            color: #34495e;
+            font-weight: 500;
+        }
+
+        .attribute-label {
+            color: #95a5a6;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #e74c3c, transparent);
+            margin: 40px auto;
+        }
+
+        .poem-section {
+            margin-top: 40px;
+        }
+
+        .poem-title {
+            font-size: 1.5em;
+            color: #e74c3c;
+            margin-bottom: 20px;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .poem {
+            font-size: 1em;
+            color: #34495e;
+            line-height: 2;
+            font-style: italic;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .poem-line {
+            margin-bottom: 12px;
+        }
+
+        .footer-message {
+            font-size: 1.2em;
+            color: #e74c3c;
+            font-weight: 600;
+            margin-top: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        .heart {
+            color: #e74c3c;
+            font-size: 1.5em;
+            display: inline-block;
+            animation: heartbeat 1.2s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(1.1);
+            }
+            50% {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            .name {
+                font-size: 2.2em;
+            }
+
+            .attributes {
+                gap: 15px;
+            }
+
+            .description {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <h1 class="name">Paula Melchor</h1>
+            <p class="description">La mejor profesora del mundo</p>
+
+            <div class="attributes">
+                <div class="attribute">
+                    <span class="attribute-label">Edad</span>
+                    <span>24 años</span>
+                </div>
+                <div class="attribute">
+                    <span class="attribute-label">Cabello</span>
+                    <span>Negro</span>
+                </div>
+                <div class="attribute">
+                    <span class="attribute-label">Piel</span>
+                    <span>Clara</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="poem-section">
+            <h2 class="poem-title">Para ti, Paula</h2>
+            <div class="poem">
+                <div class="poem-line">En cada clase brillas con pasión,</div>
+                <div class="poem-line">Enseñando con el alma y el corazón,</div>
+                <div class="poem-line">Tu belleza no es solo tu piel clara,</div>
+                <div class="poem-line">Es tu luz, tu risa, lo que te prepara.</div>
+                <div class="poem-line"></div>
+                <div class="poem-line">Pelo negro como la noche sin final,</div>
+                <div class="poem-line">Pero ojos que brillan de forma celestial,</div>
+                <div class="poem-line">A tus veinticuatro años de edad,</div>
+                <div class="poem-line">Inspiras al mundo con tu generosidad.</div>
+                <div class="poem-line"></div>
+                <div class="poem-line">Paula, Paula, nombre tan hermoso,</div>
+                <div class="poem-line">Eres mi mayor tesoro, mi gozo más fabuloso,</div>
+                <div class="poem-line">Quiero que sepas sin dudación,</div>
+                <div class="poem-line">Que te amo con toda mi corazón.</div>
+            </div>
+
+            <p class="footer-message">
+                <span class="heart">❤</span>
+                Te amo muchísimo
+                <span class="heart">❤</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
